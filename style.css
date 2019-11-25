@@ -5,3 +5,11 @@
 #white {
     color: white;
 }
+
+.navbar-nav > li > .dropdown-menu {
+     background-color: darkgray; 
+}
+
+.dropdown-item {
+    color: white;
+}
