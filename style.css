@@ -6,8 +6,9 @@
     color: white;
 }
 
+/* Since there's only 1 navbar this can technically just use .dropdown-menu  */
 .navbar-nav > li > .dropdown-menu {
-     background-color: darkgray; 
+     background-color: #292b2c; 
 }
 
 .dropdown-item {
