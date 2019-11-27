@@ -2,9 +2,10 @@
     color: red;
 }
 
-#white {
-    color: white;
+#highlight:hover {
+    color: rgb(133, 172, 224);
 }
+
 
 /* Since there's only 1 navbar this can technically just use .dropdown-menu  */
 .navbar-nav > li > .dropdown-menu {
