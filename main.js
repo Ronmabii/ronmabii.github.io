@@ -22,7 +22,7 @@ TypeWriter.prototype.type = function() {
         this.txt = fulltxt.substring(0, this.txt.length -1)
     }
     else {
-        // Add Char
+        // Add Char (H, He, Hel, Help)
         this.txt = fulltxt.substring(0, this.txt.length +1)
     }
 
@@ -49,6 +49,7 @@ TypeWriter.prototype.type = function() {
         typeSpeed = 500;
     }
 
+    // keeps calling type() to loop with delay
     setTimeout(() => this.type(), typeSpeed);
 }
 
