@@ -4,6 +4,7 @@
 
 #highlight:hover {
     color: rgb(133, 172, 224);
+    transition: .6s ease-out;
 }
 
 
@@ -34,12 +35,12 @@ h1 {
 
 @media(max-width:800px) {
     h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 }
 
 @media(max-width:500px) {
     h1 {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 }
