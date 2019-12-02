@@ -1,12 +1,15 @@
 #red {
     color: red;
 }
+.red {
+    background-color: grey;
+    color: white;
+}
 
 #highlight:hover {
     color: rgb(133, 172, 224);
     transition: .6s ease-out;
 }
-
 
 /* Since there's only 1 navbar this can technically just use .dropdown-menu  */
 .navbar-nav > li > .dropdown-menu {
@@ -42,5 +45,9 @@ h1 {
 @media(max-width:500px) {
     h1 {
         font-size: 1.6rem;
+    }
+
+    #cardrow {
+        justify-content: center;
     }
 }
