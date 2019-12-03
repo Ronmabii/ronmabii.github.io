@@ -1,9 +1,9 @@
 #red {
     color: red;
 }
-.red {
-    background-color: grey;
-    color: white;
+
+#cardcon {
+    background-color: #E9ECEF;
 }
 
 #highlight:hover {
