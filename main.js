@@ -3,8 +3,8 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
     this.words = words;
     this.txt = '';
     this.wordIndex = 0;
-    this.wait = parseInt(wait, 10);
-    this.type();
+    this.wait = parseInt(wait, 10);  // base 10 = 0-9 (1:1 in milliseconds)
+    this.type(); // repeated infinitely
     this.isDeleting = false;
 }
 
@@ -27,7 +27,7 @@ TypeWriter.prototype.type = function() {
     }
 
     // Insert txt into Element
-    this.txtElement.innerHTML =  `<span class ="txt">${this.txt}</span>`;
+    this.txtElement.innerHTML =  `<span class ="txt">${this.txt}</span>`; // backtick format
 
     // Type Speed
     let typeSpeed = 300;
