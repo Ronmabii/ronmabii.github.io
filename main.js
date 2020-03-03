@@ -11,7 +11,7 @@ const TypeWriter = function(txtElement, words, wait = 3000) {
 // Type Method
 
 TypeWriter.prototype.type = function() {
-    // Current index of word (list)
+    // Current index of word (list) -- 3%3 resets back to 0
     const current = this.wordIndex % this.words.length;
     // Get full text of current word
     const fulltxt = this.words[current];
@@ -29,7 +29,7 @@ TypeWriter.prototype.type = function() {
     // Insert txt into Element
     this.txtElement.innerHTML =  `<span class ="txt">${this.txt}</span>`; // backtick format
 
-    // Type Speed
+    // Type Speed - higher # is slower 300ms or 3 seconds
     let typeSpeed = 300;
     if(this.isDeleting) {
         typeSpeed /= 2
@@ -37,7 +37,7 @@ TypeWriter.prototype.type = function() {
 
     // If word is complete
     if(!this.isDeleting && this.txt === fulltxt) {
-        //pause at end
+        //pause at end and switch to delete
         typeSpeed = this.wait;
         this.isDeleting = true;
     }
